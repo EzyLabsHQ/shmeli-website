@@ -912,6 +912,23 @@ p {
   gap: 16px;
 }
 
+.rating-box {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px 22px;
+  box-shadow: var(--shadow-soft);
+}
+
+.rating-box .eyebrow {
+  margin-bottom: 10px;
+}
+
+.rating-box iframe {
+  display: block;
+  overflow: hidden;
+}
+
 .contact-item {
   display: flex;
   gap: 16px;
