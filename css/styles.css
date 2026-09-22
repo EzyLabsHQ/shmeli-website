@@ -921,12 +921,57 @@ p {
 }
 
 .rating-box .eyebrow {
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-.rating-box iframe {
+.rating-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 16px 18px;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.rating-link:hover {
+  transform: translateY(-2px);
+  border-color: var(--yellow);
+  box-shadow: var(--shadow-soft);
+}
+
+.rating-ya {
+  flex: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #fc3f1d, #ec2417);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.rating-link strong {
   display: block;
-  overflow: hidden;
+  font-size: 15px;
+  line-height: 1.3;
+  margin-bottom: 2px;
+}
+
+.rating-link small {
+  color: var(--muted);
+  font-size: 13.5px;
+}
+
+.rating-arrow {
+  margin-left: auto;
+  color: var(--yellow-deep);
+  font-weight: 800;
+  font-size: 18px;
 }
 
 .contact-item {
